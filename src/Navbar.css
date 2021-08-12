@@ -1,0 +1,129 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
+
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    color: #000;
+    width: 30px;
+    text-align: center;
+    text-decoration:none;
+    border-radius: 50%;
+    
+  }
+
+  .fa:hover {
+    background-color: rgb(245, 241, 16);
+    box-shadow: 2px 2px 4px #000000;
+  }
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    /* background: linear-gradient(45deg, rgb(156, 14, 156), midnightblue); */
+    background: transparent;
+}
+
+.list {
+    list-style-type: none;
+    /* background: linear-gradient(45deg, rgb(156, 14, 156), midnightblue); */
+    background: transparent;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start ;
+    position: relative;
+}
+.items {
+    margin-right: 30px;
+    font-size: 20px;
+    text-transform: uppercase;
+    color:#000;
+    cursor: pointer;
+}
+.itemss {
+    margin-right: 30px;
+    font-size: 20px;
+    text-transform: uppercase;
+    color:#000;
+    cursor: pointer;
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+}
+
+/* .btn {
+    position: relative;
+    outline: none;
+    text-decoration: none;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    height: 200px;
+    width: 210px;
+    opacity: 1;
+    background-color: #ffffff;
+    border: 1px solid rgba(22, 76, 167, 0.6);
+  }
+     */
+ 
+  .btn:hover {
+    animation: rotate 0.7s ease-in-out both;
+    background-color: yellow;
+  }
+    
+  .btn:hover span {
+    animation: storm 0.7s ease-in-out both;
+    animation-delay: 0.06s;
+  }
+
+ .btn {
+    display: none;
+    position: absolute;
+    right: 30px;
+    top: 15px;
+    padding: 5px;
+    color: #000;
+    font-size: 18px;
+    border-radius: 20px;
+    border: blue;
+    height: 40px;
+    width: 60px;
+    /* background-color: rgb(42, 195, 255); */
+    background-color: white;
+    border: 1px solid black;
+    box-shadow: 2px 2px 4px #000000;
+
+} 
+
+
+@media screen and (max-width: 500px){
+
+    .list {
+        flex-direction: row;
+        height: 2px;
+        margin-top: 60px;
+        margin-right: 30px;
+    }
+    /* .items:nth-child(1){
+        border-top: 1px solid rgba(255, 255, 255, 0.555);
+        margin-top: 10px;
+    } */
+    .items {
+        width: 100%;
+        /* border-top: 1px solid rgba(255, 255, 255, 0.555); */
+        text-align: end;
+        
+        /* margin-right: 90px; */
+        padding: -2px 0;
+    }
+    .btn {
+        display: block;
+    }
+
+}
+
+
